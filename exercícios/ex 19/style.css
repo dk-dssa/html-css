@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*
+em HTML é id = em CSS é # ( só pode ser usado uma vez por página )
+em HTML é class = em CSS é . ( pode ser usado várias vezes por página )
+em HTML é tag = em CSS é tag
+*/
+
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+body{
+    background-color:#dafdbaa1 ;
+}
+h1{
+    color:#13678A;
+}
+#principal{
+    color: #ffffff;
+    text-align: center;
+    background-color: #012030;
+    padding: auto;
+}
+h2{
+    color: #45C4B0;
+}
+p{
+    color: black;
+}
+.basico{
+    color: #ee7676;
+}
+.intermediario{
+    color: #f5d17d;
+}
+.avançado{
+    color: #6dad67;
+}
+.destaque{ 
+    font-family:'Edu VIC WA NT Hand', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5d17d;
+    
+    
+    
+}
