@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas </title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial,Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse; /*Remove espaços entre bordas*/
+        }
+        tr.linha{
+            background-color: #615e5e59;
+        }
+        td{
+            border:1px  solid black;
+            padding: 8px;
+        }
+        td.dado{
+            background-color: #e7e182;
         }
     </style>
 </head>
@@ -22,23 +36,26 @@
     -->
     <table>
         <tr> <!-- Primeira linha-->
-            <td>A</td>
-            <td>B1</td>
-            <td>C1</td>
+            <td>A1
+            <td>B1
+            <td>C1
+            
+        </tr> <!-- Segunda linha-->
+        <tr class="linha">
+            <td>A2
+            <td>B2
+            <td>C2
+           
         </tr>
-        <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
-        </tr>
-        <tr>
+        <tr> <!-- Terceira linha-->
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td>C3</td> 
+            
         </tr>
-        <tr>
+        <tr> <!-- Quarta linha-->
             <td>A4</td>
-            <td>B4</td>
+            <td class="dado">B4</td>
             <td>C4</td>
         </tr>
     </table>
