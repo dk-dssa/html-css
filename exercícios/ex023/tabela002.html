@@ -13,6 +13,7 @@
         table{
             width: 500px;
             border-collapse: collapse; /*Remove espaços entre bordas*/
+            position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -29,9 +30,18 @@
             background-color: rgb(48, 48, 48);
             color: white;
         }
-        tbody{
-            background-color: rgb(141, 141, 141);
-
+        /*nth-child(2n) Efeito zebra
+        odd: ímpar
+        even: par*/
+        
+        thead > tr > th{
+            position: sticky;
+            background-color:rgb(48, 48, 48) ;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(170, 170, 170);
+            
+            top: -1px; /*Fixa o cabeçalho no topo da tabela*/
         }        
         td .num{
             text-align: right;
